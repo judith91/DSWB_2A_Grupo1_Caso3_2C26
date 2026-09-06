@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 
 const eventoRoutes = require("./src/routes/eventos.routes");
+const clienteRoutes = require("./src/routes/clientes.routes");
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(express.json());
 
 // Rutas
 app.use("/eventos", eventoRoutes);
+app.use("/clientes", clienteRoutes);
 
 
 app.listen(PORT, () => {

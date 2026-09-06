@@ -1,22 +1,44 @@
 [
   {
     "id": 1,
-    "nombre": "Ana Gomez",
-    "email": "ana@mail.com"
+    "nombre": "Carlos",
+    "apellido": "Lopez",
+    "email": "carlos@test.com",
+    "telefono": "1128456123"
   },
   {
     "id": 2,
-    "nombre": "Carlos Ruiz",
-    "email": "carlos@mail.com"
+    "nombre": "María Ordoñes",
+    "apellido": "González Irrutia",
+    "email": "maria@test.com",
+    "telefono": "1131789654"
   },
   {
     "id": 3,
-    "nombre": "Carlos Ruiz",
-    "email": "carlos@mail.com"
+    "nombre": "Pedro",
+    "apellido": "Sánchez",
+    "email": "pedro@test.com",
+    "telefono": "1145678901"
   },
   {
     "id": 4,
-    "nombre": "Pedro",
-    "email": "pedro@gmail.com"
+    "nombre": "María Ordoñes",
+    "apellido": "González Irrutia",
+    "email": "maria@test.com",
+    "telefono": "1131789654"
+  },
+  {
+    "id": 5,
+    "nombre": "María Ordoñes",
+    "apellido": "González Irrutia",
+    "email": "maria@test.com",
+    "telefono": "1131789654"
+  },
+  {
+    "id": 6,
+    "nombre": "María Ordoñes",
+    "apellido": "González xxx",
+    "email": "maria@test.com",
+    "telefono": "1131789654"
   }
 ]
