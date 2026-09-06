@@ -22,9 +22,32 @@ const leerSalas = () => {
   return JSON.parse(data);
 };
 
+// Actualizar automáticamente el estado de los eventos según fecha y hora
+const actualizarEstados = (eventos) => {
+  const ahora = new Date();
+
+  let huboCambios = false;
+
+  eventos.forEach((evento) => {
+    const fechaHoraEvento = new Date(`${evento.fecha}T${evento.hora}`);
+
+    if (fechaHoraEvento < ahora && evento.estado === "activo") {
+      evento.estado = "finalizado";
+      huboCambios = true;
+    }
+  });
+
+  if (huboCambios) {
+    guardarEventos(eventos);
+  }
+
+  return eventos;
+};
+
 // GET ALL (API)
 const obtenerEventos = (req, res) => {
   const eventos = leerEventos();
+  actualizarEstados(eventos);
   res.json(eventos);
 };
 
